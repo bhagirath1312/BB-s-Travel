@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dwarka</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <!-- Bootstrap Icons CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    /> -->
+    <!-- Google Fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap -->
+    <!-- Bootstrap icon -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+    <style>
+        * {
+            font-family: "Nunito", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .arrow {
+            margin-right: 0px;
+            animation-name: arrow_anim;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes arrow_anim {
+            to {
+                margin-right: 0px;
+            }
+
+            from {
+                margin-left: 3px;
+            }
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .back-button i {
+            margin-right: 5px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 4rem;
+            position: absolute;
+            /* top: 50%; */
+            /* Position at the center vertically */
+            left: 50%;
+            /* Position at the center horizontally */
+            transform: translate(-50%, -50%);
+            /* Center the title precisely */
+            letter-spacing: 5px;
+            color: whitesmoke;
+            top: 350px;
+        }
+
+        .page-title {
+            z-index: 1;
+            /* font-size: 10rem; */
+        }
+
+        .image-container img {
+            position: relative;
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+
+        .image {
+            /* position: relative; */
+            object-fit: cover;
+            /* height: 250px; */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand d-inline-flex align-items-center">
+                <img src="logo.png" alt="logo" width="55px" height="55px" />
+                <i class="bi bi-backpack"></i>
+                <h5 class="text-center active mt-2">BB's Travel</h5>
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <h5 class="d-inline-flex align-items-center">Home</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <h5>Blog</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <h5>Contact</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_me.html" class="nav-link">
+                            <h5>About Me</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="page-title display-1">Somnath</h1> <!-- Added display-1 class for font size -->
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="image-container">
+                    <img src="css/temple-4030285_1920.jpg" alt="Temple" class="border rounded img-fluid">
+                    <a href="blog.html" class="back-button text-decoration-none">
+                        <i class="fas fa-chevron-left arrow"></i>
+                        <i class="fas fa-chevron-left arrow"></i>
+                        Back
+                    </a>
+                </div>
+                <div class="border rounded px-2 mt-1 pt-1 ">
+                    <h3 class="fw-bold ">Exploring the Spiritual Majesty of Somnath Temple: A Journey Through Time</h3>
+                    <p> Nestled along the serene shores of the Arabian Sea in the Prabhas Patan near Veraval in
+                        Saurashtra, Gujarat, the Somnath Temple stands as a testament to the timeless spirituality and
+                        cultural heritage of India. Often referred to as the "Shrine Eternal," the Somnath Temple is not
+                        merely a place of worship but a symbol of resilience, faith, and the eternal cycle of creation
+                        and destruction.
+
+                    </p>
+                    <h3 class="fw-bold ">A Glimpse into History</h3>
+
+                    <p>The history of Somnath Temple is as rich and diverse as the land it resides in. Records suggest
+                        that the original temple was built by the moon god, Soma, himself, out of gold. Over the
+                        centuries, it has been reconstructed numerous times due to various invasions and natural
+                        calamities. The current structure, built in the Chalukya style of architecture, is a majestic
+                        sight to behold, adorned with intricate carvings and sculptures that narrate tales of Hindu
+                        mythology and spirituality.
+                    </p>
+
+
+
+                    <h3 class="fw-bold ">The Legend of Somnath
+
+                    </h3>
+
+                    <p>Legend has it that Somnath Temple is one of the twelve Jyotirlingas, the holiest abodes of Lord
+                        Shiva, the destroyer and transformer among the Hindu trinity. The temple's name, "Somnath,"
+                        translates to "Lord of the Moon," signifying Shiva's association with the lunar deity. According
+                        to mythology, the moon god, Soma, was cursed by his father-in-law Daksha to wane and wax
+                        continuously. Seeking redemption, Soma installed a lingam (a symbol of Shiva) at the site where
+                        the temple stands today, thus invoking the blessings of Lord Shiva and attaining salvation.
+                    </p>
+                    <h3 class="fw-bold ">Spiritual Significance</h3>
+
+                    <p>For devout Hindus, a pilgrimage to Somnath Temple is not just a journey of physical distance but
+                        a sacred odyssey of the soul. The temple's sanctity lies in its ability to evoke a sense of awe
+                        and reverence, transcending the boundaries of time and space. Devotees from all walks of life
+                        flock to this sacred site to seek solace, divine blessings, and spiritual enlightenment. The
+                        rhythmic chants of mantras, the fragrance of incense, and the sight of devotees offering prayers
+                        create an ambiance of devotion and piety that is truly uplifting.
+                    </p>
+                    <h3 class="fw-bold ">Preserving Heritage, Inspiring Devotion</h3>
+                    <p>Despite facing numerous adversities throughout its history, including repeated invasions and
+                        plunder, the Somnath Temple stands tall as a beacon of resilience and cultural pride. Each
+                        stone, each sculpture, and each pillar narrates a tale of valor, devotion, and unwavering faith.
+                        The temple's restoration and preservation efforts serve as a testament to the enduring spirit of
+                        the Indian civilization, which has withstood the test of time and emerged stronger, more
+                        vibrant, and more resilient.
+
+                    </p>
+                    <h3 class="fw-bold ">Conclusion</h3>
+                    <p>A visit to Somnath Temple is not just a journey through physical space but a pilgrimage through
+                        the annals of history and spirituality. It is a reminder of the eternal cycle of creation and
+                        destruction, the impermanence of worldly possessions, and the timeless essence of the divine. As
+                        the waves of the Arabian Sea crash against the shores nearby, they echo the eternal chant of "Om
+                        Namah Shivaya," reminding us of the omnipresence of the divine and the boundless power of faith.
+
+                        In the hallowed precincts of Somnath Temple, time stands still, and the soul finds its true
+                        abode in the embrace of the divine. It is a sanctuary of peace, a haven of solace, and a symbol
+                        of hope for all who seek the eternal truth beyond the illusions of the material world.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        <form action="" method="get" class="d-flex flex-column align-items-end">
+                            <textarea name="comments" id="" cols="30" rows="5" class="form-control mt-5"
+                                placeholder="Comments"></textarea>
+                            <input type="submit" value="Submit"
+                                class="btn btn-outline-dark btn-secondary text-white mt-3 align-self-end">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center mt-3 fw-bold ">More Blogs</h3>
+            <div class="container">
+                <div class="row gap-md-1 gap-lg-4 justify-content-center">
+                    <div class="blog-outline  col-lg-3 border border-4 rounded mt-2">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/IMG_1681.jpg" alt="" height="200px" width="300px"
+                                    class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                                <h1 class="blog-title">Barda Hills</h1>
+                                <p class="blog-description">
+                                    Hardly 15 km from the coast of Porbandar town of Porbandar district, the hilly
+                                    forest of
+                                    Barda is stands against the salinity ingress in the region. This area was declared
+                                    as
+                                    sanctuary in February '1979.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- <div class="card col-3">
+                    <div class="card-body">
+                        <h1>Hello World</h1>
+                    </div>
+                </div> -->
+                    <div class="blog-outline col-lg-3 border border-4 rounded mt-2">
+                        <a href="dwarka.html" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/temple-2340862.jpg" alt=""
+                                    class="justify-content-center img-fluid mt-2 blog-image image-set rounded" />
+                                <h1 class="blog-title">Dwarka</h1>
+                                <p class="blog-description">
+                                    Nestled on the western coast of India, overlooking the azure Arabian Sea, lies the
+                                    ancient city
+                                    of Dwarka. Renowned for its rich cultural heritage and profound spiritual
+                                    significance,
+                                    Dwarka
+                                    is a captivating destination that draws pilgrims and tourists alike from across the
+                                    globe.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-outline col-md-6 col-lg-3 border border-4 rounded mt-2">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/IMG_1645.jpg" alt="" height="200px" width="300px"
+                                    class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                                <h1 class="blog-title">Ghumli</h1>
+                                <p class="blog-description">
+                                    Ghumli is a village located 45 km from Porbandar, at foothills of Barda, in Devbhumi
+                                    Dwarka
+                                    district of Gujarat, India and It is archeologist site.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+</body>
+<footer class="footer mt-4 py-3">
+    <div class="container text-center">
+        <span class="text-muted">
+            Follow us on:
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-instagram"></i></a>
+        </span>
+        <br>
+        <span>BB's Travel &copy; 2024</span>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .social-icons i {
+            font-size: 2rem;
+            /* Adjust the size as needed */
+        }
+
+        @media (max-width: 768px) {
+            .navbar-brand img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .navbar-brand i {
+                font-size: 1.5rem;
+            }
+
+            .navbar-nav .nav-link h5 {
+                display: inline;
+            }
+
+            .description {
+                padding-top: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .col-lg-4 {
+                text-align: center;
+            }
+
+            .col-lg-4 img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand d-inline-flex align-items-center">
+                <img src="logo.png" alt="logo" width="55px" height="55px" />
+                <i class="bi bi-backpack"></i>
+                <h5 class="text-center active mt-2">
+                    BB's Travel</h5>
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end " id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">
+                            <h5 class="d-inline-flex  align-items-center">Home</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <h5>Blog</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <h5>Contact</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_me.html" class="nav-link active ">
+                            <h5>About Me</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container  rounded description mt-2" >
+        <div class="row align-items-center">
+            <div class="col-md-6 col-lg-4">
+                <img src="about_me.jpeg" alt="" class="profile-image rounded-circle" />
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <h3 class="mb-4">Follow Me:</h3>
+                <div class="d-flex mb-4 social-icons">
+                    <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-discord"></i></a>
+                    <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="lead mt-5">
+            Hello there! I'm Bhagirath, the adventurous soul behind BB's Travel. Ever since I can remember, I've been
+            captivated by the allure of exploration and discovery. From the winding streets of ancient cities to the
+            tranquil shores of pristine beaches, each journey has left an indelible mark on my heart. Traveling isn't
+            just a hobby for me; it's a way of life—a passion that fuels my curiosity and ignites my sense of wonder.
+            Whether it's wandering through bustling markets in far-off lands or hiking to remote mountain vistas, I
+            thrive on the thrill of new experiences and the joy of connecting with diverse cultures. Through BB's
+            Travel, I aim to share my adventures, insights, and travel tips with fellow explorers like you. From hidden
+            gems to iconic landmarks, I'll take you on a journey across the globe, one destination at a time. Join me as
+            we uncover the beauty of our world and create unforgettable memories together. Thank you for joining me on
+            this extraordinary adventure. Let's embark on a journey of discovery and inspiration, and may our paths
+            intersect in the most unexpected of places.
+            <br><br>
+            Happy travels!
+        </p>
+    </div>
+
+  
+</body>
+<footer class="footer mt-4 py-3">
+    <div class="container text-center">
+        <span class="text-muted">
+            Follow us on:
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-instagram"></i></a>
+        </span>
+        <br>
+        <span>BB's Travel &copy; 2024</span>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,257 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+.navbar-nav .nav-link h5 {
+    display: inline-flex;
+    /* align-items: center; */
+    /* margin: 0; */
+    font-size: 1.3rem;
+    /* Adjust the font size as needed */
+    margin: 0;
+    font-weight: 500;
+}
+
+.blog-image {
+    width: auto;
+
+    height: auto;
+}
+
+/* .blog-outline {
+    border-color: #d9d9d9 !important;
+    transition: width 0.5s;
+}
+
+.blog-outline:hover {
+    width: 350px;
+} */
+.blog-outline {
+    border-color: #d9d9d9 !important;
+    transition: width 0.4s;
+    width: 300px; /* Set initial width to 100% */
+}
+
+.blog-outline:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 325px; /* Set width on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .blog-outline:hover {
+        width: 350px; /* Set width to 100% on hover for smaller screens */
+    }
+}
+/*  */
+
+.discription {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.profile-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    /* Make it a perfect circle */
+    object-fit: cover;
+    /* Ensure the image covers the entire circle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add shadow effect */
+}
+.carousel {
+    height: 500px; /* Set the fixed height of the carousel */
+  }
+  .carousel-item img {
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .carousel-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* font-size: 36px; Adjust the font size as needed */
+    color: white; /* Text color */
+    text-align: center; /* Center the text horizontally */
+    z-index: 1; /* Ensure the title appears on top of the images */
+    white-space: nowrap;
+    font-size: 100px
+  }
+
+  .carousel-title-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    transform: translate(-50%, -50%);
+    /* font-size: 36px; Adjust the font size as needed */
+    color: white; /* Text color */
+    text-align: center; /* Center the text horizontally */
+    z-index: 1; /* Ensure the title appears on top of the images */
+    white-space: nowrap;
+    font-size: 50px
+  }
+ /* CSS for screens smaller than 768px (typical tablets) */
+@media (max-width: 768px) {
+    /* Adjust navbar font size for smaller screens */
+    .navbar-nav .nav-link h5 {
+        font-size: 1rem;
+    }
+
+    /* Adjust carousel height for smaller screens */
+    #myCarousel {
+        height: 200px;
+    }
+
+    /* Adjust carousel title font size for smaller screens */
+    .carousel-title {
+        font-size: 2rem;
+    }
+
+    /* Adjust carousel title quote font size for smaller screens */
+    .carousel-title-quote {
+        top: 200px;
+        font-size: 1.5rem;
+    }
+
+    /* Adjust description font size for smaller screens */
+    .description p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust newsletter section font size for smaller screens */
+    .container h2,
+    .container p {
+        font-size: 1rem;
+    }
+
+    /* Adjust blog title font size for smaller screens */
+    .blog-title {
+        font-size: 1rem;
+    }
+
+    /* Adjust blog description font size for smaller screens */
+    .blog-description {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust read more link font size for smaller screens */
+    #readMoreLink {
+        font-size: 1rem;
+    }
+
+    /* Adjust footer font size for smaller screens */
+    .footer span {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust footer social icon size for smaller screens */
+    .footer .bi {
+        font-size: 1.2rem;
+    }
+}
+
+/* CSS for screens smaller than 500px */
+@media (max-width: 500px) {
+    /* Adjust title font size for smaller screens */
+    #title {
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
+    /* Adjust quote font size for smaller screens */
+    #quote {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust carousel height for smaller screens */
+    .carousel {
+        height: 300px;
+    }
+
+    /* Adjust carousel title font size for smaller screens */
+    .carousel-title {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust carousel title quote font size for smaller screens */
+    .carousel-title-quote {
+        top: 190px;
+        font-size: 0.8rem;
+    }
+
+    /* Adjust description font size for smaller screens */
+    .description p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust newsletter section font size for smaller screens */
+    .container h2,
+    .container p {
+        font-size: 1rem;
+    }
+
+    /* Adjust blog title font size for smaller screens */
+    .blog-title {
+        font-size: 1rem;
+    }
+
+    /* Adjust blog description font size for smaller screens */
+    .blog-description {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust read more link font size for smaller screens */
+    #readMoreLink {
+        font-size: 1rem;
+    }
+
+    /* Adjust footer font size for smaller screens */
+    .footer span {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust footer social icon size for smaller screens */
+    .footer .bi {
+        font-size: 1rem;
+    }
+
+    /* Hide additional blog items on smaller screens */
+    .hide {
+        display: none;
+    }
+}
+
+
+  .arrow{
+    margin-right: 0px;
+    animation-name: arrow_anim;
+    animation-duration:800ms;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes arrow_anim {
+    to{
+        margin-left: 5px;
+    }
+    from{
+        margin-right: 3px;
+
+    }
+    
+  }
+
+
+.hide{
+    display:none;
+}
+
+#readMoreLink {
+    cursor: pointer;
+}
+
+
+
+
+
