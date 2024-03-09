@@ -184,6 +184,7 @@
     /* Adjust blog title font size for smaller screens */
     .blog-title {
         font-size: 1rem;
+        font-weight: bold;
     }
 
     /* Adjust blog description font size for smaller screens */
