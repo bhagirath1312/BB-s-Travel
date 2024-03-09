@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historical Places
+        of Saurashtra</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <!-- Bootstrap Icons CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    /> -->
+    <!-- Google Fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap -->
+    <!-- Bootstrap icon -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+    <style>
+        * {
+            font-family: "Nunito", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .arrow {
+            margin-right: 0px;
+            animation-name: arrow_anim;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes arrow_anim {
+            to {
+                margin-right: 0px;
+            }
+
+            from {
+                margin-left: 3px;
+            }
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .back-button i {
+            margin-right: 5px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 4rem;
+            position: absolute;
+            /* top: 50%; */
+            /* Position at the center vertically */
+            left: 50%;
+            /* Position at the center horizontally */
+            transform: translate(-50%, -50%);
+            /* Center the title precisely */
+            letter-spacing: 5px;
+            color: whitesmoke;
+            top: 350px;
+        }
+
+        .page-title {
+            z-index: 1;
+            /* font-size: 10rem; */
+        }
+
+        .image-container img {
+            position: relative;
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+
+        .image {
+            /* position: relative; */
+            object-fit: cover;
+            /* height: 250px; */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand d-inline-flex align-items-center">
+                <img src="logo.png" alt="logo" width="55px" height="55px" />
+                <i class="bi bi-backpack"></i>
+                <h5 class="text-center active mt-2">BB's Travel</h5>
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">
+                            <h5 class="d-inline-flex align-items-center">Home</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <h5>Blog</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <h5>Contact</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_me.html" class="nav-link">
+                            <h5>About Me</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="page-title display-1">Historical Places <br> of Saurashtra</h1> <!-- Added display-1 class for font size -->
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="image-container">
+                    <img src="css/IMG_1724.jpg" alt="Temple" class="border rounded img-fluid">
+                    <a href="blog.html" class="back-button text-decoration-none">
+                        <i class="fas fa-chevron-left arrow"></i>
+                        <i class="fas fa-chevron-left arrow"></i>
+                        Back
+                    </a>
+                </div>
+                <div class="border rounded px-2 mt-1 pt-1 ">
+                    <h3 class="fw-bold ">List of the hidden and historical places of saurashtra</h3>
+                   <ul>
+                    <li>Dhingeshwar Mahadev Temple</li>
+                    <li>Khimeshwar Mahadev Temple</li>
+                    <li>Nathabhagat Place</li>
+                    <li>Arjundev's old artical , revati kund, mahadev temple , kucchadi</li>
+                   </ul>
+                    <h3 class="fw-bold ">Dhingeshwar Mahadev Temple</h3>
+                    <div class="row">
+
+                        <div class="col-lg-6 gx-1 px-2" >
+    
+                         
+                            <img src="css/IMG_1721.jpg" alt="" class="image border image rounded ">
+                        </div>
+                        <div class="col-lg-6 gx-1 px-2" >
+    
+                         
+                            <img src="css/IMG_1708.jpg" alt="" class="image border image rounded ">
+                        </div>
+                    </div>
+                    <p>From Buddhist cave to Shiva temple is 5000 years old
+                        These are originally Buddhist caves from the 4* century
+                        A.D., measuring 2.70 by 3.60 m. and 5.60 by 6.70 m., respectively. Both have square pillars, of which the ones in the larger caves are clearly visible.
+                        The smaller cave has been converted to a Shiva temple by introducing a large linga, with a circumference of 4.15 m., where there may originally have been a stupa.
+                        Buddhism was widespread in Saurashtra during the 4" century
+                        A.D. under Kshatrapa rule.</p>
+                    <img src="css/IMG_1718.jpg" alt="" srcset="" class="image border rounded " height="300px">
+                    <h3 class="fw-bold mt-2">Khimeshwar Mahadev Temple</h3>
+                    <div class="row">
+                        <div class="col-6 gx-1 px-2">
+                            <img src="css/IMG_1746.jpg" alt="" srcset="" height="500px" class="image border rounded">
+                        </div>
+                        <div class="col-6 gx-1 px-2">
+                            <img src="css/IMG_1769.jpg" alt="" srcset="" height="500px" class="image border rounded ">
+                        </div>
+                    </div>
+<p class="mt-2">Unique in western India <br> Dating from the early 7th century, this is the only temple in western India having a Valabhi roof with niches in the gables, supported by a curved shoulder-like structure.
+    Other features of interest are the cornice and dentils below the roof line and the large chaitya arch-like ornaments alongside the sanctum door. <br>The construction of this temple is representative of the Maitraka period (i.e. 468-788 A.D.). </p>
+                   
+    <img src="css/IMG_1766.jpg" alt="" class="image border rounded " height="300px">
+    <h3 class="fw-bold mt-2 ">Nathabhagat Place</h3>
+    <div class="row">
+        <div class="col-6 gx-1 px-2">
+            <img src="css/IMG_1728.jpg" alt="" srcset="" height="400px" class="image border rounded">
+        </div>
+        <div class="col-6 gx-1 px-2">
+            <img src="css/IMG_1723.jpg" alt="" srcset="" height="400px" class="image border rounded ">
+        </div>
+    </div>
+                    <p class="mt-2">This is the story of the most outstanding Mer who waged a single handed fight against the regime of Jamnagar state. It was sometime in 1830 that Natho Bhagat of Modhwada village came to know about the theft of 10 buffaloes of his father’s sister by the robbers from Jamnagar territory. His appeals to some of the officers of the start in the neighbouring Ranpur to help return the buffaloes were rudely turned down. Instead of accepting complaint, he was insulted more than once. His roaming about for three days to convince the officers to take action was of no benefit. At long last, he decided to use force and took away 100 cows of the state from the Rabari herdsmen in Ranpur. <br>Later on, Natho took courage and openly became a law-breaker called “Bharwatio” the outlaw. He fought several times against the soldiers of Jamnagar who tried to capture and punish him. Natho Bhagat with his Makrani associates decided to take shelter at the natural hollow boulder called Polo-Pano in the Barda hills near the village Khistri. It was from here that he went on raiding a number of villages of Jamnagar state in the area of Ranpur and Barad. The state of Jamnagar was not able to do anything to stop the raids which were extended even to the border of Kutch. <br> Later on, he broke the defence of Davalia and looted the property of the state subjects. It was difficult for anybody to kill Natho Bhagat because he possessed miraculous powers of what I known as Shial Singh in his thigh. His opponents, Babi Nawab of Junagadh and the ruler of Jamnagar were constantly in the state of fear. He also commanded miraculous help of Gorakhanthji of Idar. <br>The Bard of Modhwada village was full of praise for the bravery of Natho and composed folk songs in which he asserted that “Without Natho Bhagat, all the eleven Mer linages would have been of the status of trash”. This praise of Natho Bhagat was taken as insult by other Mers. It was challenges by Rano Khunti, who later accepted the superiority of Natho in the Mer community. There are many folk songs and tales composed in his appreciation and praise by the well known Gujarati folklorist Zavrchans Meghani. <br> Even until this day it is said that a Modhwadia Mer under no circumstances drinks water from a Khastriya household, this due to the murder conspiracy that Punjo of the village Khistri committed upon Natho Bhagat.
+                    </p>
+                    <h3 class="fw-bold ">Arjundev's old artical , revati kund, mahadev temple , kantela</h3>
+                    <div class="row">
+                        <div class="col-6 gx-1 px-2">
+                            <img src="css/IMG_1780.jpg" alt="" srcset="" height="400px" class="image border rounded">
+                        </div>
+                        <div class="col-6 gx-1 px-2">
+                            <img src="css/IMG_1798.jpg" alt="" srcset="" height="400px" class="image border rounded ">
+                        </div>
+                    </div>
+                    <p>This temple of lord shiva is very old its found by arjundev (A.D. 1265)
+                        this temple have revati kund(lake) this is very well structured and beautiful and its have many sculptures in that kund (lake) there are no more information of that temple
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        <form action="" method="get" class="d-flex flex-column align-items-end">
+                            <textarea name="comments" id="" cols="30" rows="5" class="form-control mt-5"
+                                placeholder="Comments"></textarea>
+                            <input type="submit" value="Submit"
+                                class="btn btn-outline-dark btn-secondary text-white mt-3 align-self-end">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center mt-3 fw-bold ">More Blogs</h3>
+            <div class="container">
+                <div class="row gap-md-1 gap-lg-4 justify-content-center">
+                    <div class="blog-outline  col-lg-3 border border-4 rounded mt-2">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/IMG_1681.jpg" alt="" height="200px" width="300px"
+                                    class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                                <h1 class="blog-title">Barda Hills</h1>
+                                <p class="blog-description">
+                                    Hardly 15 km from the coast of Porbandar town of Porbandar district, the hilly
+                                    forest of
+                                    Barda is stands against the salinity ingress in the region. This area was declared
+                                    as
+                                    sanctuary in February '1979.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- <div class="card col-3">
+                    <div class="card-body">
+                        <h1>Hello World</h1>
+                    </div>
+                </div> -->
+                    <div class="blog-outline col-lg-3 border border-4 rounded mt-2">
+                        <a href="dwarka.html" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/temple-2340862.jpg" alt=""
+                                    class="justify-content-center img-fluid mt-2 blog-image image-set rounded" />
+                                <h1 class="blog-title">Dwarka</h1>
+                                <p class="blog-description">
+                                    Nestled on the western coast of India, overlooking the azure Arabian Sea, lies the
+                                    ancient city
+                                    of Dwarka. Renowned for its rich cultural heritage and profound spiritual
+                                    significance,
+                                    Dwarka
+                                    is a captivating destination that draws pilgrims and tourists alike from across the
+                                    globe.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-outline col-md-6 col-lg-3 border border-4 rounded mt-2">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/IMG_1645.jpg" alt="" height="200px" width="300px"
+                                    class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                                <h1 class="blog-title">Ghumli</h1>
+                                <p class="blog-description">
+                                    Ghumli is a village located 45 km from Porbandar, at foothills of Barda, in Devbhumi
+                                    Dwarka
+                                    district of Gujarat, India and It is archeologist site.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+       
+
+</body>
+<footer class="footer mt-4 py-3">
+    <div class="container text-center">
+        <span class="text-muted">
+            Follow us on:
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-instagram"></i></a>
+        </span>
+        <br>
+        <span>BB's Travel &copy; 2024</span>
+    </div>
+</footer>
+</html>

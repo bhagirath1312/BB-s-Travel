@@ -1,10 +1,20 @@
 * {
     font-family: 'Nunito', sans-serif;
 }
-
+.navbar-nav .nav-link h5 {
+    display: inline-flex;
+    /* align-items: center; */
+    /* margin: 0; */
+    font-size: 1.3rem;
+    /* Adjust the font size as needed */
+    margin: 0;
+    font-weight: 500;
+}
 
 .blog-image {
     width: auto;
+
+    height: auto;
 }
 
 /* .blog-outline {
@@ -22,6 +32,7 @@
 }
 
 .blog-outline:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 325px; /* Set width on hover */
 }
 
@@ -239,3 +250,8 @@
 #readMoreLink {
     cursor: pointer;
 }
+
+
+
+
+

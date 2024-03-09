@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dwarka</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <!-- Bootstrap Icons CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    /> -->
+    <!-- Google Fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap -->
+    <!-- Bootstrap icon -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+    <style>
+        * {
+            font-family: "Nunito", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .arrow {
+            margin-right: 0px;
+            animation-name: arrow_anim;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes arrow_anim {
+            to {
+                margin-right: 0px;
+            }
+
+            from {
+                margin-left: 3px;
+            }
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .back-button i {
+            margin-right: 5px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 4rem;
+            position: absolute;
+            /* top: 50%; */
+            /* Position at the center vertically */
+            left: 50%;
+            /* Position at the center horizontally */
+            transform: translate(-50%, -50%);
+            /* Center the title precisely */
+            letter-spacing: 5px;
+            color: whitesmoke;
+            top: 350px;
+        }
+
+        .page-title {
+            z-index: 1;
+            /* font-size: 10rem; */
+        }
+
+        .image-container img {
+            position: relative;
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand d-inline-flex align-items-center">
+                <img src="logo.png" alt="logo" width="55px" height="55px" />
+                <i class="bi bi-backpack"></i>
+                <h5 class="text-center active mt-2">BB's Travel</h5>
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <h5 class="d-inline-flex align-items-center">Home</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <h5>Blog</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <h5>Contact</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_me.html" class="nav-link">
+                            <h5>About Me</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="page-title display-1">Dwarka</h1> <!-- Added display-1 class for font size -->
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="image-container">
+                    <img src="css/temple-2340862.jpg" alt="Temple" class="border rounded img-fluid">
+                    <a href="blog.html" class="back-button text-decoration-none">
+                        <i class="fas fa-chevron-left arrow"></i>
+                        <i class="fas fa-chevron-left arrow"></i>
+                        Back
+                    </a>
+                </div>
+                <div class="border rounded px-2 mt-1 ">
+                    <h3 class="fw-bold ">Exploring the Spiritual Haven of Dwarka</h3>
+                    <p>Nestled on the western coast of India, overlooking the azure Arabian Sea, lies the ancient city
+                        of Dwarka. Renowned for its rich cultural heritage and profound spiritual significance, Dwarka
+                        is a captivating destination that draws pilgrims and tourists alike from across the globe.</p>
+                    <h3 class="fw-bold ">Historical Marvels:</h3>
+                    <p>Dwarka is steeped in history, with its origins dating back to the Vedic period. According to
+                        Hindu mythology, it is believed to be the legendary kingdom of Lord Krishna, who resided here
+                        over 5,000 years ago. The city is mentioned in various ancient texts such as the Mahabharata and
+                        the Puranas, further adding to its mystique.
+
+                        One of the most iconic landmarks in Dwarka is the Dwarkadhish Temple, dedicated to Lord Krishna.
+                        This majestic temple, adorned with intricate carvings and sculptures, stands as a testament to
+                        the city's spiritual legacy. Pilgrims flock to this sacred site to seek blessings and immerse
+                        themselves in devotion.</p>
+                    <h3 class="fw-bold ">Spiritual Sanctity:</h3>
+                    <p>Dwarka is not just a city of historical significance; it is also a spiritual haven where one can
+                        experience moments of profound tranquility and introspection. The rhythmic chants of hymns, the
+                        fragrance of incense, and the sight of devotees offering prayers create an atmosphere of
+                        serenity and reverence.
+
+                        Apart from the Dwarkadhish Temple, Dwarka is home to several other sacred sites such as the
+                        Rukmini Temple, Nageshwar Jyotirlinga Temple, and Gomti Ghat. Each of these places holds its own
+                        unique charm and draws devotees seeking solace and spiritual fulfillment.</p>
+                    <h3 class="fw-bold ">Exploring the Surroundings:</h3>
+                    <p>Beyond its spiritual allure, Dwarka offers a plethora of attractions for the avid traveler. The
+                        city's picturesque coastline beckons visitors to indulge in leisurely strolls along the beach,
+                        offering breathtaking views of the sunset against the backdrop of ancient temples.
+
+                        For those interested in history and archaeology, a visit to the nearby Bet Dwarka Island is a
+                        must. This island is believed to be the original abode of Lord Krishna and is dotted with
+                        archaeological remains that provide insights into the city's illustrious past.</p>
+                    <h3 class="fw-bold">Cultural Delights</h3>
+                    <p>Dwarka is not just a destination; it is a melting pot of diverse cultures and traditions. The
+                        city's vibrant festivals, such as Janmashtami and Diwali, are celebrated with great fervor and
+                        pomp, offering visitors a glimpse into the rich tapestry of Indian culture.
+
+                        From savoring delectable Gujarati cuisine to shopping for traditional handicrafts and artifacts,
+                        Dwarka offers a myriad of experiences that cater to every palate and preference.</p>
+                    <h3 class="fw-bold ">Final Thoughts</h3>
+                    <p>Dwarka, with its ancient temples, serene beaches, and vibrant culture, is a destination that
+                        leaves an indelible mark on the hearts of all who visit. Whether you seek spiritual
+                        enlightenment, historical insights, or simply wish to immerse yourself in the beauty of nature,
+                        Dwarka has something to offer for everyone. So, pack your bags and embark on a journey to this
+                        enchanting city, where history, spirituality, and culture converge in perfect harmony.</p>
+                        <!-- <div class="image-container">
+
+                            <img src="css/IMG_1645.jpg" alt="" class=" border rounded ">
+                            Dwarka, with its ancient temples, serene beaches, and vibrant culture, is a destination that
+                        leaves an indelible mark on the hearts of all who visit. Whether you seek spiritual
+                        enlightenment, historical insights, or simply wish to immerse yourself in the beauty of nature,
+                        Dwarka has something to offer for everyone. So, pack your bags and embark on a journey to this
+                        enchanting city, where history, spirituality, and culture converge in perfect harmony.
+                        </div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center container-fluid ">
+
+            <div class="col-9">
+                <form action="" method="get" class="align-items-end  d-flex flex-column">
+                    <textarea name="comments" id="" cols="3" rows="5" class="form-control mt-5" placeholder="Comments"></textarea>
+                    <input type="submit" value="Submit" class="col-2 mt-3 justify-content-end btn btn-outline-dark btn-secondary text-white ">
+                </form>
+            </div>
+        </div>
+        <h3 class="text-center mt-3 fw-bold ">More Blogs</h3>
+        <div class="container">
+            <div class="row gap-md-1 gap-lg-4 justify-content-center">
+                <div class="blog-outline  col-lg-3 border border-4 rounded mt-2">
+                    <a href="" class="text-decoration-none text-dark">
+                        <div class="blog-box border-dark">
+                            <img src="css/IMG_1681.jpg" alt="" height="200px" width="300px"
+                            class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                            <h1 class="blog-title">Barda Hills</h1>
+                            <p class="blog-description">
+                                Hardly 15 km from the coast of Porbandar town of Porbandar district, the hilly forest of
+                                Barda is stands against the salinity ingress in the region. This area was declared as
+                                sanctuary in February '1979.
+                            </p>
+                            <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- <div class="card col-3">
+                    <div class="card-body">
+                        <h1>Hello World</h1>
+                    </div>
+                </div> -->
+                <div class="blog-outline col-lg-3 border border-4 rounded mt-2">
+                    <a href="" class="text-decoration-none text-dark">
+                        <div class="blog-box border-dark">
+                            <img src="css/IMG_1637.jpg" alt="" height="200px" width="300px"
+                                class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                            <h1 class="blog-title">Bhanvad</h1>
+                            <p class="blog-description">
+                                Bhanvad is a city and a municipality in Devbhoomi Dwarka district in the state of Gujarat,
+                                India.
+                                Bhanvad is named after Jethwa ruler Rana Bhanji Jetva of Ghumli, who founded this place.
+                            </p>
+                            <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="blog-outline col-md-6 col-lg-3 border border-4 rounded mt-2">
+                    <a href="" class="text-decoration-none text-dark">
+                        <div class="blog-box border-dark">
+                            <img src="css/IMG_1645.jpg" alt="" height="200px" width="300px"
+                                class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                            <h1 class="blog-title">Ghumli</h1>
+                            <p class="blog-description">
+                                Ghumli is a village located 45 km from Porbandar, at foothills of Barda, in Devbhumi Dwarka
+                                district of Gujarat, India and It is archeologist site.
+                            </p>
+                            <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+    </div>
+   
+    
+</body>
+<footer class="footer mt-4 py-3">
+    <div class="container text-center">
+        <span class="text-muted">
+            Follow us on:
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-instagram"></i></a>
+        </span>
+        <br>
+        <span>BB's Travel &copy; 2024</span>
+    </div>
+</footer>
+</html>

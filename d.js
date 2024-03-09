@@ -10,7 +10,7 @@ function toggleDisplay() {
         }
         isDisplayed = true;
     } else {
-        window.location.href = "about_me.html"; // Redirect to index.html
+        window.location.href = "blog.html"; // Redirect to index.html
     }
 }
 

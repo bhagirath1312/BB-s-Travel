@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dwarka</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <!-- Bootstrap Icons CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    /> -->
+    <!-- Google Fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap -->
+    <!-- Bootstrap icon -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+    <style>
+        * {
+            font-family: "Nunito", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .arrow {
+            margin-right: 0px;
+            animation-name: arrow_anim;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes arrow_anim {
+            to {
+                margin-right: 0px;
+            }
+
+            from {
+                margin-left: 3px;
+            }
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .back-button i {
+            margin-right: 5px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 4rem;
+            position: absolute;
+            /* top: 50%; */
+            /* Position at the center vertically */
+            left: 50%;
+            /* Position at the center horizontally */
+            transform: translate(-50%, -50%);
+            /* Center the title precisely */
+            letter-spacing: 5px;
+            color: whitesmoke;
+            top: 350px;
+        }
+
+        .page-title {
+            z-index: 1;
+            /* font-size: 10rem; */
+        }
+
+        .image-container img {
+            position: relative;
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+
+        .image {
+            /* position: relative; */
+            object-fit: cover;
+            /* height: 250px; */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand d-inline-flex align-items-center">
+                <img src="logo.png" alt="logo" width="55px" height="55px" />
+                <i class="bi bi-backpack"></i>
+                <h5 class="text-center active mt-2">BB's Travel</h5>
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <h5 class="d-inline-flex align-items-center">Home</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <h5>Blog</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <h5>Contact</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_me.html" class="nav-link">
+                            <h5>About Me</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="page-title display-1">Bhanvad</h1> <!-- Added display-1 class for font size -->
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="image-container">
+                    <img src="css/IMG_1637.jpg" alt="Temple" class="border rounded img-fluid">
+                    <a href="blog.html" class="back-button text-decoration-none">
+                        <i class="fas fa-chevron-left arrow"></i>
+                        <i class="fas fa-chevron-left arrow"></i>
+                        Back
+                    </a>
+                </div>
+                <div class="border rounded px-2 mt-1 pt-1 ">
+                    <h3 class="fw-bold ">History of Bhanvad</h3>
+                    <p> Bhanvad was founded in 1313 AD by Jethwa ruler Rana Bhanji Jetva, after his previous capital,
+                        Ghumli, was sacked.
+                        1313 AD: Bhanvad's story starts with the sacking of Ghumli, the Jethwa dynasty's previous
+                        capital.
+                        This event prompted the Jethwa ruler, Rana Bhanji Jetva, to establish Bhanvad as a new
+                        settlement.
+                        The city's name derives from "Bhanji" and "vad" (meaning "garden" or "settlement").
+                        Bhanvad also boasts a rich, local folklore tradition, with bardic tales recounting the exploits
+                        of Jethwa rulers like Bhan Jethwa and stories like the one associated with the "Bhutvad"
+                        (Ghost's banian tree).
+
+                    </p>
+                    <h3 class="fw-bold ">Bhutvad (Ghost's banian tree)</h3>
+                    <img src="css/IMG_1624.jpg" alt="" class="image border rounded ">
+                    <p>Mangdavalo was a nephew of Bhan Jethva, royal of Dhatarvad. He chases a bandit Bayal Chadva who
+                        has abducted cows from his maternal uncle's town Ghumli. On the way, he meets her lover
+                        Padmavati at Patan who invite her to play Chopat. He promises to return for play and chases
+                        Bayal. In ensued fight, Mangdavalo dies and becomes a ghost as he died unfulfilling his promise.
+                        <br>Following his death, Padmavati becames mad and her marriage is arranged with a Vanik. The
+                        ghost of Mangdavalo stops the marriage party on the way and requests his uncle Alasivala to
+                        arrange his marriage with Padmavati. They marry in a stepwell near a banyan tree which turns in
+                        a palace at night and back to banyan tree in day. The couple lives a mix of happy and sad life
+                        as their union is only possible at night. At last, Padmavati liberates the ghost of Mangdavalo
+                        from his ghostly life at Damodar Kund by drowning with his ashes.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-6 gx-1 px-2">
+                            <img src="css/IMG_1618.jpg" alt="" srcset="" height="500px" class="image border rounded">
+                        </div>
+                        <div class="col-6 gx-1 px-2">
+                            <img src="css/IMG_1619.jpg" alt="" srcset="" height="500px" class="image border rounded ">
+                        </div>
+                    </div>
+
+                    <h3 class="fw-bold ">Exploring further</h3>
+
+                    <p>If you'd like to delve deeper, consider visiting the archaeological site of Ghumli to understand
+                        Bhanvad's connection to its earlier capital.
+                        Additionally, exploring the historical sites mentioned earlier, such as the Bhanvad Palace and
+                        the temples, can offer further insights into the city's past.
+                    </p>
+                    <h3 class="fw-bold ">Sant Shree Trikamacharya</h3>
+                    <img src="css/IMG_1631 2.jpg" alt="" height="500px" class="image border rounded mb-1">
+                    <p>Every being has an internal desire to realise the Creator. Whether an individual has become aware
+                        of this yearning or not is a different matter. After many births this programmed need becomes
+                        realised and the individual awakens to the call of the Supreme. There then arises an
+                        unquenchable thirst, which leads to the treading of a fiery path. The end result being the
+                        evolution of a divine individual whose life touches many, even after His physical disappearance.
+
+                        Yogi Sant Shri Trikmacharya Maharaj was one such divine soul.
+
+                        Although born 151 years ago (2014), not much is really known about this mysterious saint and we
+                        have to rely heavily on stories, which have been handed down over the generations. A few
+                        individuals who met “Bapu (father) are still alive, but they were young at the time and as a
+                        result we only have very small glimpses into His life and activities.
+
+                        The following is a humble attempt to present the life story and miracles of Pujya Shri Trikamji
+                        Bapu. The information contained herein has been collected from various Gujarati literature,
+                        conversations with elders in the community and pilgrimages to the various places Bapu is said to
+                        have visited. This effort has been made in order to preserve His green memory as well as
+                        highlight the effects He had on the social culture at that time for all Bardai Brahmins.
+
+                        More importantly, we must not lose sight of the fact that through His yogic practices, Bapu
+                        demonstrated how an “ordinary (Bardai) man” rises himself above this material world and attunes
+                        to the Supreme realm through perseverance and regular “sadhna” (spiritual practice).
+                        <br>
+                        I hope the reading of this small piece of work inspires the reader towards this eternal and
+                        divine goal.
+                        <br>
+                        Written as a humble servant and in prostration to the Supreme Creator!
+                        <br> Jai Shri Trikmacharya Maharaj!
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        <form action="" method="get" class="d-flex flex-column align-items-end">
+                            <textarea name="comments" id="" cols="30" rows="5" class="form-control mt-5"
+                                placeholder="Comments"></textarea>
+                            <input type="submit" value="Submit"
+                                class="btn btn-outline-dark btn-secondary text-white mt-3 align-self-end">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center mt-3 fw-bold ">More Blogs</h3>
+            <div class="container">
+                <div class="row gap-md-1 gap-lg-4 justify-content-center">
+                    <div class="blog-outline  col-lg-3 border border-4 rounded mt-2">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/IMG_1681.jpg" alt="" height="200px" width="300px"
+                                    class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                                <h1 class="blog-title">Barda Hills</h1>
+                                <p class="blog-description">
+                                    Hardly 15 km from the coast of Porbandar town of Porbandar district, the hilly
+                                    forest of
+                                    Barda is stands against the salinity ingress in the region. This area was declared
+                                    as
+                                    sanctuary in February '1979.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- <div class="card col-3">
+                    <div class="card-body">
+                        <h1>Hello World</h1>
+                    </div>
+                </div> -->
+                    <div class="blog-outline col-lg-3 border border-4 rounded mt-2">
+                        <a href="dwarka.html" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/temple-2340862.jpg" alt=""
+                                    class="justify-content-center img-fluid mt-2 blog-image image-set rounded" />
+                                <h1 class="blog-title">Dwarka</h1>
+                                <p class="blog-description">
+                                    Nestled on the western coast of India, overlooking the azure Arabian Sea, lies the
+                                    ancient city
+                                    of Dwarka. Renowned for its rich cultural heritage and profound spiritual
+                                    significance,
+                                    Dwarka
+                                    is a captivating destination that draws pilgrims and tourists alike from across the
+                                    globe.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="blog-outline col-md-6 col-lg-3 border border-4 rounded mt-2">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="blog-box border-dark">
+                                <img src="css/IMG_1645.jpg" alt="" height="200px" width="300px"
+                                    class="justify-content-center img-fluid mt-2 blog-image rounded" />
+                                <h1 class="blog-title">Ghumli</h1>
+                                <p class="blog-description">
+                                    Ghumli is a village located 45 km from Porbandar, at foothills of Barda, in Devbhumi
+                                    Dwarka
+                                    district of Gujarat, India and It is archeologist site.
+                                </p>
+                                <!-- <p class="blog-meta">Posted on January 1, 2024 by Admin</p> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+          
+</body>
+<footer class="footer mt-4 py-3">
+    <div class="container text-center">
+        <span class="text-muted">
+            Follow us on:
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-decoration-none text-muted mx-2"><i class="bi bi-instagram"></i></a>
+        </span>
+        <br>
+        <span>BB's Travel &copy; 2024</span>
+    </div>
+</footer>
+</html>
